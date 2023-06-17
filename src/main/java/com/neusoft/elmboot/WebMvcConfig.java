@@ -18,7 +18,7 @@ public class WebMvcConfig implements WebMvcConfigurer {
          * maxAge：配置预检请求的有效时间
          */
         registry.addMapping("/**")
-                .allowedOrigins("http://localhost:8081")
+                .allowedOrigins("http://8.130.29.148:5680")
                 .allowCredentials(true)
                 .allowedMethods("*")
                 .allowedHeaders("*")

@@ -7,7 +7,7 @@ import axios from 'axios'
 import { provide } from "vue";
 
 //设置axios的基础url部分
-axios.defaults.baseURL = 'http://localhost:8080/elmboot/';
+axios.defaults.baseURL = 'http://8.130.29.148:6508/elmboot/';
 provide('axios',axios);
 </script>
 

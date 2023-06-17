@@ -13,9 +13,9 @@
         <i class="fa fa-angle-right"></i>
       </div>
       <p>
-        {{ deliveryaddress.contactName
-        }}{{ deliveryaddress.contactSex == 1 ? "先生" : "女士" }}
-        {{ deliveryaddress.contactTel }}
+        {{ deliveryaddress != null ? deliveryaddress.contactName : "" }}
+        {{ deliveryaddress != null ? deliveryaddress.contactSex == 1 ? "先生" : "女士" : "" }}
+        {{ deliveryaddress != null ? deliveryaddress.contactTel : "" }}
       </p>
     </div>
 

@@ -5,7 +5,7 @@
 
 	<insert id="saveOrderDetailetBatch"
 		parameterType="OrderDetailet">
-		insert into orderDetailet(orderId,foodId,quantity) values
+		insert into orderdetailet(orderId,foodId,quantity) values
 		<foreach collection="list" item="od" separator=",">
 			(#{od.orderId},#{od.foodId},#{od.quantity})
 		</foreach>
@@ -20,7 +20,7 @@
 	</resultMap>
 	
 	<select id="listOrderDetailetByOrderId" parameterType="Integer" resultMap="orderDetailetResultMap">
-		select * from orderDetailet where orderId=#{orderId}
+		select * from orderdetailet where orderId=#{orderId}
 	</select>
 	
 </mapper>
