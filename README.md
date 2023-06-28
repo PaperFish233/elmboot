@@ -1,2 +1,2 @@
 # elmboot
-Vue+Spring Boot的点餐业务线
+Maven+Vue+Spring Boot的点餐业务线
